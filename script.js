@@ -107,6 +107,7 @@ function getSelectedPages(totalPages) {
 }
 
 convertBtn.addEventListener("click", async () => {
+ alert("Convert button working!");
   if (!selectedFile) return;
 
   try {
