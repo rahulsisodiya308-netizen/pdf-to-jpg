@@ -26,10 +26,13 @@ dropZone.addEventListener("click", () => {
 });
 
 pdfInput.addEventListener("change", () => {
-  if (pdfInput.files.length > 0) {
+  if (pdfInput.files && pdfInput.files.length > 0) {
     selectedFile = pdfInput.files[0];
     fileName.textContent = selectedFile.name;
+
     convertBtn.disabled = false;
+    convertBtn.style.cursor = "pointer";
+    convertBtn.style.opacity = "1";
   }
 });
 
