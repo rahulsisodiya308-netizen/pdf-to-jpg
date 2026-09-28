@@ -50,7 +50,8 @@ body {
 }
 
 .drop-zone input {
-  display: none;
+  display: block;
+  margin: 15px auto;
 }
 
 .upload-icon {
